@@ -1,0 +1,313 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Naresh Kadali | GCP Cloud Solution Architect</title>
+<meta name="description" content="Naresh Kadali — GCP Cloud Solution Architect specialising in enterprise infrastructure architecture, cloud migration, security, platform engineering and FinOps.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#16324b;--muted:#64798e;--blue:#1677ef;--cyan:#08a9d0;--mint:#11ad7b;--sky:#eefaff;--line:#d8e8f2;--white:#fff;--gold:#e6a62d;--shadow:0 25px 80px rgba(35,96,135,.13)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;color:var(--ink);font-family:"DM Sans",sans-serif;background:linear-gradient(180deg,#f6fcff 0,#fff 42%,#f4fbff 100%);overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;z-index:-3;background-image:radial-gradient(#b9dff0 1px,transparent 1px);background-size:30px 30px;opacity:.55;mask-image:linear-gradient(#000,transparent 72%)}#particles{position:fixed;inset:0;z-index:-2;pointer-events:none}
+a{text-decoration:none;color:inherit}.container{width:min(1180px,calc(100% - 36px));margin:auto}
+nav{position:fixed;top:14px;left:0;right:0;z-index:50}.nav{height:62px;display:flex;align-items:center;justify-content:space-between;padding:0 18px;background:rgba(255,255,255,.82);backdrop-filter:blur(18px);border:1px solid #d9eaf3;border-radius:20px;box-shadow:0 12px 45px rgba(42,95,130,.08)}
+.logo{font:700 17px "Space Grotesk";letter-spacing:.04em}.logo span{color:var(--blue)}.links{display:flex;gap:24px;font-size:12px;color:#60758a}.links a:hover{color:var(--blue)}.navcta{background:#e9f8ff;color:#0879ad;padding:10px 14px;border-radius:12px;font-size:12px;font-weight:700}
+.hero{min-height:100vh;padding-top:92px;display:grid;align-items:center}.hero-grid{display:grid;grid-template-columns:1.03fr .97fr;gap:35px;align-items:center}.badge{display:inline-flex;gap:9px;align-items:center;padding:9px 13px;border:1px solid #ccefe1;background:#f0fcf7;color:#10845e;border-radius:999px;font-size:10px;font-weight:800;letter-spacing:.1em;text-transform:uppercase}.pulse{width:8px;height:8px;background:#18ba80;border-radius:50%;box-shadow:0 0 0 6px #dff7ed}
+h1{font:700 clamp(49px,7vw,84px)/.93 "Space Grotesk";letter-spacing:-.065em;margin:23px 0;color:#17344e}.gradient{background:linear-gradient(100deg,#1774ef,#0aa8d0 48%,#13ae7b);-webkit-background-clip:text;color:transparent}.hero p{max-width:670px;font-size:17px;line-height:1.8;color:var(--muted)}.actions{display:flex;gap:11px;flex-wrap:wrap;margin-top:28px}.btn{padding:14px 17px;border-radius:14px;border:1px solid var(--line);background:#fff;box-shadow:0 8px 25px rgba(40,93,126,.07);font-size:12px;font-weight:700;transition:.25s}.btn:hover{transform:translateY(-3px);box-shadow:var(--shadow)}.primary{background:linear-gradient(135deg,#287cf0,#0caaca);color:#fff;border:0}
+.stats{display:flex;gap:27px;flex-wrap:wrap;margin-top:34px}.stat strong{display:block;font:700 27px "Space Grotesk"}.stat span{display:block;color:#7b8da0;font-size:9px;text-transform:uppercase;letter-spacing:.12em;margin-top:3px}
+.hero-art{height:570px;position:relative;display:grid;place-items:center}.globe{width:275px;height:275px;border-radius:50%;position:relative;background:radial-gradient(circle at 32% 28%,#fff 0,#e8f9ff 30%,#b7e8f6 55%,#70cfe5 100%);box-shadow:0 35px 90px rgba(33,143,184,.2);border:1px solid #b9e0ec;z-index:3;overflow:hidden}.globe:before{content:"";position:absolute;inset:20px;border:1px solid rgba(22,119,239,.22);border-radius:50%;transform:scaleX(.48)}.globe:after{content:"";position:absolute;inset:0;background:linear-gradient(125deg,transparent 35%,rgba(255,255,255,.55) 48%,transparent 58%);animation:sweep 4s infinite}.globe-label{position:absolute;inset:0;display:grid;place-items:center;text-align:center;z-index:5;font:700 28px "Space Grotesk";color:#176ba0}.globe-label small{font:600 9px "DM Sans";letter-spacing:.18em;color:#278ab6}.orbit{position:absolute;border:1px dashed #9fd7e9;border-radius:50%}.o1{width:390px;height:245px;transform:rotate(19deg);animation:spin 16s linear infinite}.o2{width:490px;height:315px;transform:rotate(-25deg);animation:spin 24s linear infinite}.o3{width:440px;height:440px;animation:spin 31s linear infinite}.node{position:absolute;padding:10px 12px;border-radius:13px;background:#fff;border:1px solid #d6e8f1;box-shadow:0 12px 30px rgba(45,98,131,.1);font-size:9px;color:#60788d;z-index:6;animation:float 4s ease-in-out infinite}.n1{left:4%;top:15%}.n2{right:1%;top:22%;animation-delay:.8s}.n3{left:0;bottom:18%;animation-delay:1.3s}.n4{right:7%;bottom:11%;animation-delay:1.9s}.n5{right:2%;top:51%;animation-delay:2.3s}
+section{padding:105px 0}.head{display:flex;align-items:end;justify-content:space-between;gap:30px;margin-bottom:35px}.kicker{font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:#138bb7;font-weight:800}.head h2{font:700 clamp(34px,5vw,58px)/1 "Space Grotesk";letter-spacing:-.05em;margin:10px 0 0}.head p{max-width:440px;color:var(--muted);font-size:13px;line-height:1.75}
+.panel{background:linear-gradient(145deg,#fff,#f2fbff);border:1px solid var(--line);border-radius:32px;padding:30px;box-shadow:var(--shadow);position:relative;overflow:hidden}.panel:after{content:"";position:absolute;width:400px;height:400px;border-radius:50%;background:#ddf7ff;filter:blur(55px);right:-180px;top:-200px}.architecture{position:relative;z-index:2;display:grid;grid-template-columns:1fr 1.18fr 1fr;gap:16px;align-items:center}.box{background:rgba(255,255,255,.87);border:1px solid #d6e8f2;border-radius:19px;padding:20px;box-shadow:0 12px 32px rgba(42,100,135,.06);transition:.3s}.box:hover{transform:translateY(-5px);border-color:#9bd7ea}.box h3{font:600 17px "Space Grotesk";margin:0 0 11px}.box ul{list-style:none;margin:0;padding:0;color:#6c8093;font-size:11px;line-height:2}.core{border-color:#b8e8d7;background:linear-gradient(145deg,#fff,#f0fff9)}.connector{height:2px;background:linear-gradient(90deg,transparent,#58c7df,transparent);position:relative}.connector:after{content:"";position:absolute;right:8px;top:-4px;border:5px solid transparent;border-left-color:#58c7df}
+.kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:15px;margin-top:18px}.kpi{background:#fff;border:1px solid var(--line);border-radius:20px;padding:20px;box-shadow:0 10px 30px rgba(35,96,135,.06)}.kpi strong{display:block;font:700 31px "Space Grotesk"}.kpi span{font-size:10px;color:#72859a;line-height:1.5}
+.costgrid{display:grid;grid-template-columns:1fr 1fr;gap:18px}.cost{background:#fff;border:1px solid var(--line);border-radius:27px;padding:30px;box-shadow:var(--shadow)}.cost h3{font:600 12px "Space Grotesk";letter-spacing:.08em}.money{font:700 clamp(45px,6vw,74px) "Space Grotesk";letter-spacing:-.07em;margin:18px 0}.red{color:#e36f78}.green{color:#0bae7a}.bar{height:10px;background:#edf3f6;border-radius:99px;overflow:hidden}.bar i{height:100%;display:block;border-radius:99px}.all{width:100%;background:#f29a9e}.seventy{width:70%;background:#1abb91}.checklist{display:grid;gap:9px;margin-top:20px;font-size:11px;color:#6c8093}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.card{background:rgba(255,255,255,.8);border:1px solid var(--line);border-radius:24px;padding:24px;box-shadow:0 12px 38px rgba(35,96,135,.06);transition:.3s}.card:hover{transform:translateY(-7px);box-shadow:var(--shadow)}.icon{font-size:26px}.card h3{font:600 20px "Space Grotesk";margin:19px 0 8px}.card p{font-size:12px;line-height:1.75;color:var(--muted)}
+.timeline{position:relative}.timeline:before{content:"";position:absolute;left:123px;top:0;bottom:0;width:2px;background:#dcebf2}.role{display:grid;grid-template-columns:100px 1fr;gap:48px;padding:25px 0;position:relative}.role:before{content:"";position:absolute;left:117px;top:31px;width:12px;height:12px;border:4px solid #29a9d1;background:#fff;border-radius:50%;box-shadow:0 0 0 5px #e5f8fd}.year{text-align:right;color:#8093a6;font:600 10px "Space Grotesk"}.role h3{font:600 24px "Space Grotesk";margin:0}.role h4{font-size:10px;color:#1389b6;letter-spacing:.1em;text-transform:uppercase;margin:7px 0 12px}.role p{font-size:13px;line-height:1.75;color:var(--muted);max-width:820px}
+.pills{display:flex;flex-wrap:wrap;gap:9px}.pill{background:#fff;border:1px solid #d8e8f1;border-radius:999px;padding:10px 13px;color:#60768b;font-size:10px;box-shadow:0 7px 22px rgba(35,96,135,.05)}
+.certgrid{display:grid;grid-template-columns:1fr 1fr;gap:17px}.cert{padding:27px;border-radius:25px;background:#fff;border:1px solid var(--line);box-shadow:0 12px 38px rgba(35,96,135,.06)}.cert strong{font:600 19px "Space Grotesk";display:block}.cert span{display:block;margin-top:8px;color:var(--muted);font-size:11px}
+.cta{padding:75px 30px;text-align:center;border-radius:36px;background:linear-gradient(135deg,#e9faff,#effff8 55%,#fff);border:1px solid #cde8f1;box-shadow:var(--shadow)}.cta h2{font:700 clamp(40px,6vw,70px)/1 "Space Grotesk";letter-spacing:-.06em;max-width:850px;margin:12px auto 18px}.cta p{max-width:680px;margin:auto;color:var(--muted);font-size:14px;line-height:1.7}
+footer{border-top:1px solid #e0edf3;padding:35px 0 50px;color:#7890a4;font-size:10px;display:flex;justify-content:space-between}
+.reveal{opacity:0;transform:translateY(22px);transition:.7s}.reveal.on{opacity:1;transform:none}@keyframes spin{to{transform:rotate(360deg)}}@keyframes float{50%{transform:translateY(-9px)}}@keyframes sweep{50%{transform:translateX(15%)}} 
+@media(max-width:900px){.links{display:none}.hero-grid{grid-template-columns:1fr}.hero-art{order:-1;height:430px;transform:scale(.83)}.architecture{grid-template-columns:1fr}.connector{display:none}.kpis{grid-template-columns:1fr 1fr}.cards{grid-template-columns:1fr 1fr}.head{display:block}.head p{margin-top:15px}.timeline:before{left:10px}.role{grid-template-columns:1fr;padding-left:30px}.year{text-align:left}.role:before{left:4px}}
+@media(max-width:560px){.container{width:calc(100% - 26px)}section{padding:75px 0}.hero-art{transform:scale(.68);height:350px}.stats{gap:18px}.cards,.costgrid,.certgrid{grid-template-columns:1fr}.kpis{grid-template-columns:1fr 1fr}footer{display:block;line-height:2}}
+</style>
+
+<style>
+.career-story{display:grid;gap:20px}.career-card{background:rgba(255,255,255,.88);border:1px solid #d8e8f1;border-radius:28px;padding:29px;box-shadow:0 14px 42px rgba(35,96,135,.07);transition:.3s;position:relative;overflow:hidden}.career-card:hover{transform:translateY(-5px);box-shadow:var(--shadow);border-color:#acd9e8}.career-card.featured{background:linear-gradient(145deg,#fff,#f2fbff);border-color:#c7e5ef}.career-card.featured:before{content:"";position:absolute;width:330px;height:330px;border-radius:50%;background:#e2f8ff;filter:blur(50px);right:-150px;top:-170px;pointer-events:none}.career-top{display:flex;justify-content:space-between;gap:20px;align-items:flex-start;position:relative;z-index:2}.career-period{font:700 9px "Space Grotesk";letter-spacing:.13em;color:#138bb7}.career-card h3{font:700 29px "Space Grotesk";letter-spacing:-.04em;margin:8px 0 4px}.career-card h4{font-size:10px;line-height:1.6;letter-spacing:.08em;text-transform:uppercase;color:#62798d;margin:0}.career-badge{white-space:nowrap;padding:8px 10px;border-radius:10px;background:#e7f8ff;color:#087bab;font:700 8px "DM Sans";letter-spacing:.1em}.career-badge.blue{background:#edf1ff;color:#5969c2}.career-badge.orange{background:#fff4e4;color:#bd7a13}.career-badge.purple{background:#f4edff;color:#7656b7}.career-intro{position:relative;z-index:2;margin:20px 0;padding:15px 17px;border-left:3px solid #37b5d2;background:rgba(235,249,254,.72);border-radius:0 13px 13px 0;color:#5f7488;font-size:12px;line-height:1.75}.career-grid{display:grid;grid-template-columns:1.12fr .88fr;gap:27px;position:relative;z-index:2}.career-grid>div>strong{font:700 11px "Space Grotesk";color:#24445e;text-transform:uppercase;letter-spacing:.09em}.career-grid ul{padding:0;margin:12px 0 0;list-style:none;display:grid;gap:9px}.career-grid li{font-size:11px;line-height:1.65;color:#687c90;padding-left:16px;position:relative}.career-grid li:before{content:"";position:absolute;left:0;top:.65em;width:5px;height:5px;border-radius:50%;background:#2ca9c8}.career-tech{display:flex;flex-wrap:wrap;gap:6px;margin-top:18px}.career-tech span{font-size:8px;color:#5d7588;padding:6px 8px;background:#f5fafc;border:1px solid #dbeaf1;border-radius:999px}.career-result{margin-top:21px;padding-top:17px;border-top:1px solid #e0edf2;color:#526b80;font-size:11px;position:relative;z-index:2}.career-result b{color:#167fa8}@media(max-width:760px){.career-top{display:block}.career-badge{display:inline-block;margin-top:12px}.career-grid{grid-template-columns:1fr;gap:20px}}
+</style>
+</head>
+<body>
+<canvas id="particles"></canvas>
+<nav><div class="container nav"><a class="logo" href="#top">NARESH <span>KADALI</span></a><div class="links"><a href="#architecture">Architecture</a><a href="#finops">FinOps</a><a href="#migration">Migration</a><a href="#experience">Experience</a><a href="#stack">Stack</a></div><a class="navcta contact-btn" href="mailto:nareshkadali2k25@gmail.com" data-email="nareshkadali2k25@gmail.com">Let's Connect</a></div></nav>
+
+<main id="top">
+<section class="hero"><div class="container hero-grid">
+<div class="reveal">
+<div class="badge"><i class="pulse"></i> GCP Professional Cloud Architect · Remote Ready</div>
+<h1>Architecting <span class="gradient">cloud platforms</span> that perform.</h1>
+<p><b>GCP Cloud Solution Architect</b> specialising in enterprise infrastructure architecture, landing zones, networking, security, cloud migration, platform engineering, governance, reliability and FinOps.</p>
+<div class="actions"><a class="btn primary" href="#architecture">Enter the architecture ↗</a><a class="btn" href="mailto:nareshkadali2k25@gmail.com?subject=International%20Remote%20Cloud%20Architect%20Opportunity" data-email="nareshkadali2k25@gmail.com">Hire / Discuss</a><a class="btn" href="https://www.linkedin.com/in/nareshkadali/" target="_blank">LinkedIn</a></div>
+<div class="stats"><div class="stat"><strong>8+</strong><span>Years IT</span></div><div class="stat"><strong>5+</strong><span>Years GCP</span></div><div class="stat"><strong>~30%</strong><span>Cost Optimisation</span></div><div class="stat"><strong>2024</strong><span>PCA Certified</span></div></div>
+</div>
+<div class="hero-art reveal">
+<div class="orbit o1"></div><div class="orbit o2"></div><div class="orbit o3"></div>
+<div class="node n1">LANDING ZONE</div><div class="node n2">CLOUD SECURITY</div><div class="node n3">TERRAFORM / IaC</div><div class="node n4">FINOPS</div><div class="node n5">HYBRID CONNECTIVITY</div>
+<div class="globe"><div class="globe-label">GCP<br><small>ARCHITECTURE</small></div></div>
+</div>
+</div></section>
+
+<section id="architecture"><div class="container">
+<div class="head reveal"><div><div class="kicker">01 / Enterprise Architecture</div><h2>A platform designed as a system.</h2></div><p>Governance, networking, security, workloads, operations and economics working as one architecture.</p></div>
+<div class="panel reveal"><div class="architecture">
+<div class="box"><h3>Governance</h3><ul><li>Organisation / Folders / Projects</li><li>Landing Zones</li><li>IAM / RBAC / IAM Conditions</li><li>Organisation Policies</li><li>Architecture Standards</li></ul></div><div class="connector"></div>
+<div class="box core"><h3>Shared Platform</h3><ul><li>Shared VPC</li><li>Network Segmentation</li><li>Cloud VPN / Interconnect</li><li>DNS / Load Balancing</li><li>Private Google Access / PSC</li></ul></div><div class="connector"></div>
+<div class="box"><h3>Workloads</h3><ul><li>Compute Engine</li><li>GKE / Docker</li><li>Cloud Run</li><li>Cloud SQL / BigQuery</li><li>Cloud Storage / Pub/Sub</li></ul></div>
+<div class="box"><h3>Security</h3><ul><li>Cloud KMS / Secret Manager</li><li>Security Command Center</li><li>Cloud Armor / Cloud IDS</li><li>Vulnerability Management</li><li>Hardening / Compliance</li></ul></div><div class="connector"></div>
+<div class="box core"><h3>Observability</h3><ul><li>Cloud Monitoring</li><li>Cloud Logging / Audit Logs</li><li>Alerting / Dashboards</li><li>ELK / Grafana</li><li>RCA / SLA Governance</li></ul></div><div class="connector"></div>
+<div class="box"><h3>FinOps</h3><ul><li>Rightsizing</li><li>Budget Control</li><li>Resource Governance</li><li>Cost Optimisation</li><li>Standardisation</li></ul></div>
+</div></div>
+<div class="kpis reveal"><div class="kpi"><strong>30%</strong><span>Approx. cloud cost optimisation</span></div><div class="kpi"><strong>GCP</strong><span>Primary cloud architecture focus</span></div><div class="kpi"><strong>HA + DR</strong><span>Resilience and continuity design</span></div><div class="kpi"><strong>IaC</strong><span>Terraform + Ansible automation</span></div></div>
+</div></section>
+
+<section id="finops"><div class="container">
+<div class="head reveal"><div><div class="kicker">02 / FinOps</div><h2>Cost is an architecture concern.</h2></div><p>Optimisation through governance, rightsizing, resource standardisation and continuous visibility — not just cutting capacity.</p></div>
+<div class="costgrid"><div class="cost reveal"><h3>UNOPTIMISED BASELINE</h3><div class="money red">$100K</div><div class="bar"><i class="all"></i></div><div class="checklist">✕ Over-provisioned resources<br>✕ Idle / under-utilised capacity<br>✕ Inconsistent resource standards</div></div>
+<div class="cost reveal"><h3>ARCHITECTED STATE</h3><div class="money green">$70K</div><div class="bar"><i class="seventy"></i></div><div class="checklist">✓ Rightsizing & resource optimisation<br>✓ Governance & standardisation<br>✓ FinOps and budget visibility</div></div></div>
+</div></section>
+
+<section id="migration"><div class="container">
+<div class="head reveal"><div><div class="kicker">03 / Cloud Transformation</div><h2>From on-prem to governed GCP.</h2></div><p>Migration planning and execution across rehosting, replatforming, refactoring, hybrid integration and modernisation.</p></div>
+<div class="panel reveal"><div class="architecture">
+<div class="box"><h3>Discover</h3><ul><li>Application / Infrastructure Assessment</li><li>Dependency Mapping</li><li>Capacity & Performance</li><li>Risk Assessment</li></ul></div><div class="connector"></div>
+<div class="box core"><h3>Transform</h3><ul><li>Rehost</li><li>Replatform</li><li>Refactor</li><li>DMS / Storage Transfer</li><li>Hybrid Connectivity</li></ul></div><div class="connector"></div>
+<div class="box"><h3>Operate</h3><ul><li>Landing Zone</li><li>Security Baselines</li><li>Observability</li><li>HA / DR</li><li>Governance & FinOps</li></ul></div>
+</div></div></div></section>
+
+<section id="experience"><div class="container">
+<div class="head reveal"><div><div class="kicker">04 / Career</div><h2>Enterprise experience, architect-level impact.</h2></div><p>Not just a list of employers — a progression from data and cloud operations into GCP architecture, platform engineering, governance and technical leadership.</p></div>
+
+<div class="career-story">
+
+<article class="career-card featured reveal">
+  <div class="career-top">
+    <div><span class="career-period">APR 2022 — 30 APR 2026</span><h3>Birlasoft</h3><h4>Technical Lead · Cloud & Infrastructure Engineering · Cloud Solution Architect · GCP & Google Workspace SME</h4></div>
+    <div class="career-badge">GCP ARCHITECTURE</div>
+  </div>
+  <div class="career-intro">Enterprise-scale cloud transformation across <b>GCP infrastructure, Google Workspace, migration, security, networking, governance and FinOps</b> — acting as a technical lead and trusted cloud advisor.</div>
+  <div class="career-grid">
+    <div><strong>What I did</strong><ul>
+      <li>Designed enterprise GCP architecture across Organisation Hierarchy, Folders, Projects, Landing Zones, Shared VPC, IAM, networking, security, monitoring and DR.</li>
+      <li>Led on-premises → GCP migration, hybrid cloud integration, workload modernisation and platform transformation.</li>
+      <li>Designed networking with Shared VPC, Cloud VPN, Dedicated Interconnect, Load Balancing, Cloud DNS, firewall policies, segmentation and hybrid connectivity.</li>
+      <li>Implemented Terraform + Ansible with Git, Jenkins, Python and Shell automation for standardised provisioning and operations.</li>
+      <li>Established observability using Cloud Monitoring, Cloud Logging, Alerting, dashboards, ELK and Grafana.</li>
+      <li>Worked with security teams on IAM/RBAC, federation, SSO, OAuth, MFA, KMS, secrets, encryption, vulnerability remediation and hardening.</li>
+      <li>Led P1/P2/P3 incidents, RCA, problem management, SLA governance, capacity planning, DR and resilience improvements.</li>
+      <li>Mentored cloud architects, engineers, Workspace administrators and operations teams; created reusable architecture standards, SOPs, runbooks and implementation guides.</li>
+    </ul></div>
+    <div><strong>Business / Architecture impact</strong><ul>
+      <li><b>~30% cloud cost optimisation</b> through governance, rightsizing, resource standardisation, FinOps and infrastructure optimisation.</li>
+      <li>Defined reusable reference architectures, cloud governance frameworks, technical standards and delivery governance.</li>
+      <li>Supported architecture reviews, technical solution validation, risk assessments, CAB/change governance and implementation reviews.</li>
+      <li>Participated in customer workshops, technical due diligence, pre-sales support, POCs and solution presentations.</li>
+      <li>Delivered executive dashboards, governance reports, operational reviews, KPI reporting and customer status updates.</li>
+      <li>Worked across engineering, security, networking, operations, vendors and business stakeholders to deliver transformation programmes.</li>
+    </ul>
+    <div class="career-tech"><span>GCP</span><span>Terraform</span><span>Shared VPC</span><span>IAM</span><span>VPN / Interconnect</span><span>GKE</span><span>Cloud Run</span><span>FinOps</span></div></div>
+  </div>
+  <div class="career-result"><b>Signature outcome:</b> transformed cloud infrastructure into a governed, automated and cost-conscious enterprise platform.</div>
+</article>
+
+<article class="career-card reveal">
+  <div class="career-top">
+    <div><span class="career-period">MAR 2021 — APR 2022</span><h3>Cambridge Technology</h3><h4>Senior Engineer · Cloud Team Lead · Technical Architect & Platform Engineer</h4></div>
+    <div class="career-badge blue">PLATFORM ENGINEERING</div>
+  </div>
+  <div class="career-intro">Built the technical foundation that strengthened the transition from cloud engineering into architecture — combining <b>GCP platform engineering, IaC, containers, migration and customer-facing solution work.</b></div>
+  <div class="career-grid">
+    <div><strong>What I did</strong><ul>
+      <li>Supported scalable, resilient and secure GCP infrastructure architectures aligned with customer requirements.</li>
+      <li>Participated in cloud migration, infrastructure modernisation, platform transformation and application modernisation.</li>
+      <li>Contributed to GKE, Docker containerisation, Cloud Run and cloud-native implementations.</li>
+      <li>Implemented Terraform IaC and supported CI/CD using Git and Jenkins.</li>
+      <li>Supported IAM, Shared VPC, Cloud VPN, networking and security configurations under enterprise governance.</li>
+      <li>Implemented Monitoring, Logging, Grafana and centralised observability.</li>
+    </ul></div>
+    <div><strong>Impact & leadership</strong><ul>
+      <li>Participated in architecture reviews, solution validation, infrastructure assessments and governance.</li>
+      <li>Supported incident management, troubleshooting, RCA and performance optimisation.</li>
+      <li>Worked directly with architects, developers, operations and customer stakeholders.</li>
+      <li>Prepared architecture documents, implementation guides, SOPs and deployment standards.</li>
+      <li>Participated in POCs, architecture workshops, technical discussions and solution demonstrations.</li>
+    </ul>
+    <div class="career-tech"><span>GCP</span><span>GKE</span><span>Cloud Run</span><span>Terraform</span><span>Docker</span><span>Jenkins</span><span>Grafana</span><span>IBM Cloud</span></div></div>
+  </div>
+  <div class="career-result"><b>Career milestone:</b> expanded from implementation into platform architecture, technical validation and customer-facing cloud transformation.</div>
+</article>
+
+<article class="career-card reveal">
+  <div class="career-top">
+    <div><span class="career-period">NOV 2018 — JUN 2019</span><h3>McAfee — via Tresbu Technologies</h3><h4>Consultant · Salesforce Administration | AWS Cloud Administration</h4></div>
+    <div class="career-badge orange">CLOUD OPERATIONS</div>
+  </div>
+  <div class="career-intro">Enterprise production operations experience that built the reliability mindset behind later cloud architecture work.</div>
+  <div class="career-grid">
+    <div><strong>What I did</strong><ul>
+      <li>Supported enterprise cloud infrastructure operations with focus on availability, performance and stability.</li>
+      <li>Monitored compute, storage, networking and platform services.</li>
+      <li>Managed P1/P2/P3 incidents, service requests and escalations against SLA expectations.</li>
+      <li>Performed troubleshooting, RCA, incident resolution and trend analysis.</li>
+    </ul></div>
+    <div><strong>Operational impact</strong><ul>
+      <li>Supported change implementation, maintenance, patch validation and operational readiness.</li>
+      <li>Assisted capacity planning, performance analysis, infrastructure optimisation and preventive maintenance.</li>
+      <li>Created SOPs, knowledge articles and incident reports.</li>
+      <li>Worked with customers and cross-functional teams on service improvement.</li>
+    </ul>
+    <div class="career-tech"><span>AWS</span><span>Linux</span><span>Windows Server</span><span>ServiceNow</span><span>Monitoring</span><span>RCA</span><span>SLA</span></div></div>
+  </div>
+  <div class="career-result"><b>Foundation:</b> developed production discipline around incident leadership, reliability, change management and operational excellence.</div>
+</article>
+
+<article class="career-card reveal">
+  <div class="career-top">
+    <div><span class="career-period">MAY 2016 — OCT 2018</span><h3>CallFree Infotainment</h3><h4>Junior Data Scientist</h4></div>
+    <div class="career-badge purple">DATA FOUNDATION</div>
+  </div>
+  <div class="career-intro">Early-career analytics experience that developed the data, automation and business-insight foundation now useful for cloud and FinOps architecture.</div>
+  <div class="career-grid">
+    <div><strong>What I did</strong><ul>
+      <li>Performed data collection, cleansing, transformation and analysis for business intelligence initiatives.</li>
+      <li>Developed reports and dashboards for business stakeholders and data-driven decision-making.</li>
+      <li>Collaborated with engineering and business teams to understand requirements and improve reporting.</li>
+    </ul></div>
+    <div><strong>Skills built</strong><ul>
+      <li>Supported Python and SQL-based automation and analytical reporting.</li>
+      <li>Maintained structured datasets, documentation and data quality standards.</li>
+      <li>Participated in knowledge sharing and continuous improvement.</li>
+    </ul>
+    <div class="career-tech"><span>Python</span><span>SQL</span><span>Analytics</span><span>Tableau</span><span>Excel</span><span>Data Visualisation</span></div></div>
+  </div>
+  <div class="career-result"><b>Foundation:</b> learned to translate technical data into business-facing insight — a capability carried forward into architecture, governance and FinOps.</div>
+</article>
+
+</div>
+</div></section>
+
+<section id="stack"><div class="container">
+<div class="head reveal"><div><div class="kicker">05 / Capability Map</div><h2>Deep infrastructure coverage.</h2></div><p>The skill set is intentionally positioned around architecture, not developer-only implementation.</p></div>
+<div class="cards">
+<div class="card reveal"><div class="icon">☁️</div><h3>GCP Architecture</h3><p>Compute Engine · GKE · Cloud Run · BigQuery · Pub/Sub · Cloud Storage · Cloud SQL · Landing Zones</p></div>
+<div class="card reveal"><div class="icon">🌐</div><h3>Network Architecture</h3><p>VPC · Shared VPC · Firewall Rules · Private Google Access · Private Service Connect · VPN · Interconnect · DNS · Load Balancing</p></div>
+<div class="card reveal"><div class="icon">🛡️</div><h3>Security Architecture</h3><p>IAM · Custom Roles · Conditions · Service Accounts · Federation · SSO · KMS · Secret Manager · SCC · Cloud Armor · Cloud IDS</p></div>
+<div class="card reveal"><div class="icon">⚙️</div><h3>Platform & IaC</h3><p>Terraform · Ansible · Git/GitHub · Jenkins · Docker · GKE · Python · Shell · CI/CD · DevSecOps</p></div>
+<div class="card reveal"><div class="icon">📡</div><h3>Reliability & Operations</h3><p>Monitoring · Logging · Audit Logs · Alerting · ELK · Grafana · Incident Management · RCA · SLA · Capacity Planning · DR</p></div>
+<div class="card reveal"><div class="icon">💰</div><h3>Governance & FinOps</h3><p>Cloud Governance · Organisation Policies · Resource Governance · Budget Management · Rightsizing · Cost Optimisation</p></div>
+</div>
+</div></section>
+
+<section><div class="container">
+<div class="head reveal"><div><div class="kicker">06 / Cloud Ecosystem</div><h2>Multi-cloud awareness. GCP depth.</h2></div><p>GCP remains the primary architecture focus, complemented by secondary cloud and enterprise platform exposure.</p></div>
+<div class="cards">
+<div class="card reveal"><div class="icon">☁️</div><h3>Google Cloud — Primary</h3><p>Enterprise infrastructure architecture, migration, security, networking, governance, platform engineering and FinOps.</p></div>
+<div class="card reveal"><div class="icon">◈</div><h3>AWS — Secondary</h3><p>AWS cloud administration and architecture exposure, with AWS Solutions Architect – Professional certification in progress.</p></div>
+<div class="card reveal"><div class="icon">🔗</div><h3>Enterprise Platforms</h3><p>IBM Cloud infrastructure automation with Terraform; Microsoft Azure theoretical knowledge; Google Workspace enterprise administration and identity.</p></div>
+</div>
+</div></section>
+
+<section><div class="container">
+<div class="head reveal"><div><div class="kicker">07 / Architecture Leadership</div><h2>Trusted advisor, not just implementer.</h2></div><p>Strong stakeholder-facing capability across architecture governance, technical direction and enterprise transformation.</p></div>
+<div class="pills reveal"><span class="pill">HLD / LLD</span><span class="pill">Target State Architecture</span><span class="pill">Architecture Reviews</span><span class="pill">Solution Validation</span><span class="pill">Technical Due Diligence</span><span class="pill">Customer Workshops</span><span class="pill">Pre-Sales Support</span><span class="pill">POCs</span><span class="pill">Governance Frameworks</span><span class="pill">Security Governance</span><span class="pill">Executive Reporting</span><span class="pill">Technical Mentoring</span><span class="pill">SOPs / Runbooks</span><span class="pill">Change Governance</span><span class="pill">Incident Leadership</span></div>
+</div></section>
+
+<section><div class="container">
+<div class="head reveal"><div><div class="kicker">08 / Credentials</div><h2>Validated cloud expertise.</h2></div><p>Professional certification and continuous expansion into intelligent cloud architecture.</p></div>
+<div class="certgrid">
+<div class="cert reveal"><strong>Google Cloud Professional Cloud Architect</strong><span>Issued February 2024 · Google Cloud</span></div>
+<div class="cert reveal"><strong>AWS Certified Solutions Architect — Professional</strong><span>In progress</span></div>
+<div class="cert reveal"><strong>AI Platform Engineering</strong><span>Exploring Vertex AI, LLM workflows, agentic automation and AI-assisted engineering.</span></div>
+<div class="cert reveal"><strong>MBA</strong><span>Andhra Bharathi Institute of Computer Science · 2014–2016</span></div>
+</div></div></section>
+
+<section><div class="container"><div class="cta reveal"><div class="kicker">09 / International Remote Opportunities</div><h2>Need an architect who can connect cloud, security, reliability and cost?</h2><p>Let's discuss GCP infrastructure architecture, cloud transformation, platform engineering, migration, governance or FinOps for your next enterprise programme.</p><div class="actions" style="justify-content:center"><a class="btn primary" href="mailto:nareshkadali2k25@gmail.com?subject=International%20Remote%20GCP%20Architect%20Opportunity" data-email="nareshkadali2k25@gmail.com">Start a Conversation</a><a class="btn" href="https://www.linkedin.com/in/nareshkadali/" target="_blank">LinkedIn</a><a class="btn" href="https://github.com/KadaliNaresh/" target="_blank">GitHub</a></div></div></div></section>
+</main>
+<footer class="container"><span>© 2026 Naresh Kadali · GCP Cloud Solution Architect</span><span>India · International Remote · Immediate Joiner</span></footer>
+
+<script>
+const c=document.getElementById("particles"),x=c.getContext("2d");let w,h,pts=[];
+function resize(){w=c.width=innerWidth;h=c.height=innerHeight;pts=Array.from({length:65},()=>({x:Math.random()*w,y:Math.random()*h,vx:(Math.random()-.5)*.16,vy:(Math.random()-.5)*.16}))}
+function draw(){x.clearRect(0,0,w,h);for(const p of pts){p.x+=p.vx;p.y+=p.vy;if(p.x<0||p.x>w)p.vx*=-1;if(p.y<0||p.y>h)p.vy*=-1;x.fillStyle="rgba(31,139,178,.34)";x.beginPath();x.arc(p.x,p.y,1.2,0,7);x.fill()}for(let i=0;i<pts.length;i++)for(let j=i+1;j<pts.length;j++){const a=pts[i],b=pts[j],d=Math.hypot(a.x-b.x,a.y-b.y);if(d<125){x.strokeStyle="rgba(31,139,178,"+(0.07*(1-d/125))+")";x.beginPath();x.moveTo(a.x,a.y);x.lineTo(b.x,b.y);x.stroke()}}requestAnimationFrame(draw)}addEventListener("resize",resize);resize();draw();
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)e.target.classList.add("on")}),{threshold:.12});document.querySelectorAll(".reveal").forEach(e=>io.observe(e));
+</script>
+
+<div id="contactModal" class="contact-modal" aria-hidden="true">
+  <div class="contact-card">
+    <button class="contact-close" id="contactClose" aria-label="Close">×</button>
+    <div class="kicker">LET'S CONNECT</div>
+    <h3>Start a conversation</h3>
+    <p>Choose your preferred way to contact Naresh.</p>
+    <div class="contact-options">
+      <a id="gmailBtn" class="contact-option primary" target="_blank" rel="noopener">Open Gmail</a>
+      <a id="emailBtn" class="contact-option">Open Email App</a>
+      <button id="copyEmailBtn" class="contact-option">Copy Email</button>
+    </div>
+    <div id="copyStatus" class="copy-status"></div>
+    <div class="contact-address">nareshkadali2k25@gmail.com</div>
+  </div>
+</div>
+<style>
+.contact-modal{position:fixed;inset:0;z-index:100;display:none;place-items:center;padding:20px;background:rgba(22,50,75,.22);backdrop-filter:blur(10px)}
+.contact-modal.open{display:grid}
+.contact-card{position:relative;width:min(440px,100%);padding:32px;border-radius:28px;background:#fff;border:1px solid #d8e8f2;box-shadow:0 35px 100px rgba(20,70,100,.22)}
+.contact-card h3{font:700 32px "Space Grotesk";letter-spacing:-.04em;margin:10px 0 7px}.contact-card p{font-size:13px;color:#6a7d91;line-height:1.6}.contact-close{position:absolute;right:17px;top:14px;border:0;background:#eef8fc;width:34px;height:34px;border-radius:50%;font-size:22px;color:#517187;cursor:pointer}
+.contact-options{display:grid;gap:10px;margin-top:22px}.contact-option{display:flex;justify-content:center;align-items:center;min-height:48px;border:1px solid #d8e8f2;border-radius:14px;background:#fff;color:#17344e;font:700 12px "DM Sans";cursor:pointer}.contact-option.primary{background:linear-gradient(135deg,#287cf0,#0caaca);color:#fff;border:0}.copy-status{text-align:center;min-height:18px;margin-top:10px;color:#10a777;font-size:11px}.contact-address{text-align:center;margin-top:10px;color:#7a8da0;font-size:11px}
+</style>
+
+
+<script>
+(function(){
+  const email = "nareshkadali2k25@gmail.com";
+  const modal = document.getElementById("contactModal");
+  const close = document.getElementById("contactClose");
+  const gmail = document.getElementById("gmailBtn");
+  const emailBtn = document.getElementById("emailBtn");
+  const copy = document.getElementById("copyEmailBtn");
+  const status = document.getElementById("copyStatus");
+
+  function openContact(){
+    modal.classList.add("open");
+    modal.setAttribute("aria-hidden","false");
+    gmail.href = "https://mail.google.com/mail/?view=cm&fs=1&to=" + encodeURIComponent(email) +
+                 "&su=" + encodeURIComponent("International Remote GCP Architect Opportunity");
+    emailBtn.href = "mailto:" + email + "?subject=" +
+                    encodeURIComponent("International Remote GCP Architect Opportunity");
+  }
+  function closeContact(){
+    modal.classList.remove("open");
+    modal.setAttribute("aria-hidden","true");
+  }
+
+  document.querySelectorAll(".contact-btn,[data-email]").forEach(function(el){
+    el.addEventListener("click", function(e){
+      e.preventDefault();
+      openContact();
+    });
+  });
+
+  close.addEventListener("click", closeContact);
+  modal.addEventListener("click", function(e){ if(e.target === modal) closeContact(); });
+  document.addEventListener("keydown", function(e){ if(e.key === "Escape") closeContact(); });
+
+  copy.addEventListener("click", async function(){
+    try{
+      await navigator.clipboard.writeText(email);
+      status.textContent = "Email address copied.";
+    }catch(err){
+      status.textContent = "Email: " + email;
+    }
+  });
+})();
+</script>
+
+</body></html>
